@@ -51,14 +51,14 @@ export const MOCK_MATCHES: Match[] = [
 
 export const MOCK_PLAYERS: Player[] = [
     // Los Galácticos (tm1)
-    { id: "p1", team_id: "tm1", name: "Juan Pérez", number: 10, position: "F", is_active: true },
-    { id: "p2", team_id: "tm1", name: "Carlos López", number: 7, position: "F", is_active: true },
-    { id: "p3", team_id: "tm1", name: "Pedro Silva", number: 5, position: "D", is_active: true },
-    { id: "p4", team_id: "tm1", name: "Miguel Ángel", number: 1, position: "GK", is_active: true },
+    { id: "p1", team_id: "tm1", name: "Juan Pérez", document_id: "12345678", number: 10, position: "F", is_active: true, created_at: new Date().toISOString() },
+    { id: "p2", team_id: "tm1", name: "Carlos López", document_id: "12345679", number: 7, position: "F", is_active: true, created_at: new Date().toISOString() },
+    { id: "p3", team_id: "tm1", name: "Pedro Silva", document_id: "12345680", number: 5, position: "D", is_active: true, created_at: new Date().toISOString() },
+    { id: "p4", team_id: "tm1", name: "Miguel Ángel", document_id: "12345681", number: 1, position: "GK", is_active: true, created_at: new Date().toISOString() },
 
     // Dep. Linares (tm2)
-    { id: "p5", team_id: "tm2", name: "Andrés Iniesta", number: 8, position: "M", is_active: true },
-    { id: "p6", team_id: "tm2", name: "Xavi H.", number: 6, position: "M", is_active: true },
-    { id: "p7", team_id: "tm2", name: "Carles P.", number: 5, position: "D", is_active: true },
-    { id: "p8", team_id: "tm2", name: "Victor V.", number: 1, position: "GK", is_active: true },
+    { id: "p5", team_id: "tm2", name: "Andrés Iniesta", document_id: "12345682", number: 8, position: "M", is_active: true, created_at: new Date().toISOString() },
+    { id: "p6", team_id: "tm2", name: "Xavi H.", document_id: "12345683", number: 6, position: "M", is_active: true, created_at: new Date().toISOString() },
+    { id: "p7", team_id: "tm2", name: "Carles P.", document_id: "12345684", number: 5, position: "D", is_active: true, created_at: new Date().toISOString() },
+    { id: "p8", team_id: "tm2", name: "Victor V.", document_id: "12345685", number: 1, position: "GK", is_active: true, created_at: new Date().toISOString() },
 ];
