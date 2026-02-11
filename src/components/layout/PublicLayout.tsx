@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Trophy, Calendar, Users, LogIn } from 'lucide-react';
 
@@ -12,8 +13,15 @@ export default function PublicLayout({
             <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                 <div className="container flex h-16 items-center justify-between px-4 md:px-6">
                     <Link href="/" className="flex items-center gap-2 font-bold text-primary text-xl">
-                        <Trophy className="h-6 w-6" />
-                        <span>Goleo</span>
+                        <div className="relative h-10 w-32">
+                            <Image
+                                src="/logo.png"
+                                alt="Goleo Logo"
+                                fill
+                                className="object-contain object-left"
+                                priority
+                            />
+                        </div>
                     </Link>
                     <nav className="flex items-center gap-4 text-sm font-medium">
                         <Link href="/standings" className="hidden md:flex items-center gap-2 hover:text-primary transition-colors">
